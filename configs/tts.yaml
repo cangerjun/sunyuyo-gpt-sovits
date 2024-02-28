@@ -1,0 +1,60 @@
+bert_path: GPT_SoVITS/pretrained_models/chinese-roberta-wwm-ext-large
+cnhubert_base_path: GPT_SoVITS/pretrained_models/chinese-hubert-base
+default_speaker: 孙羽幽 
+device: cuda
+frp: ssh
+frp_domain: https://webtts.berstar.cn
+hz: '32000'
+is_half: true
+keep_wav: false
+open_browser: false
+paly_device: 4
+play: false
+public: false
+server_host: 0.0.0.0
+server_port: 8080
+speaker:
+  孙羽幽:
+    gpt_path: /models/孙羽幽/sunyuyo-e15.ckpt
+    sovits_path: /models/孙羽幽/sunyuyo_e8_s784.pth
+    ref_wav_path: /models/孙羽幽/正常.wav
+    text: "慧慧变心了，佛佛追慧还没追上吧。"
+    text_lang: zh
+    emotion:
+      伤心:
+        ref_wav_path: /models/孙羽幽/伤心.wav
+        text: "我觉得打本太机械化了。我觉得打本他每个本都是固定的机制。"
+        text_lang: zh
+  可莉:
+    gpt_path: /models/可莉/kli-e15.ckpt
+    ref_wav_path: /models/可莉/keli_e8_s248.pth
+    ref_wav_path: /models/可莉/正常.wav
+    text: "「城里放炮禁闭室报到」、「炸弹伤人琴找上门」、「放火烧山可莉完蛋」——这就是可莉在骑士团的生存守则。"
+    text_lang: zh
+    emotion:
+      撒娇:
+        ref_wav_path: /models/可莉/开心.wav
+        text: "可莉今天又勇敢地抓到了花纹奇怪的蜥蜴！从没见过这种图案，你要看看吗？"
+        text_lang: zh
+  嘉然:
+    gpt_path: /models/嘉然/Diana-e24.ckpt
+    sovits_path: /models/嘉然/Diana_e52_s2444.pth
+    ref_wav_path: /models/iaran/正常.wav
+    text: "啊哈可可爱了，阿这不算，额说就是具体地什么得说到具体的部位，比如说。"
+    text_lang: zh
+  珈乐: 
+    gpt_path: /models/珈乐/Carol-e15.ckpt
+    sovits_path: /models/珈乐/Carol_e40_s2160.pth
+    ref_wav_path: /models/珈乐/正常.wav
+    text: "我学的徐良的趴，她学的汪苏泷的趴。歌怎么唱的。发小男的女的，你猜。"
+    text_lang: zh
+    emotion:
+      开心：
+      ref_wav_path: /models/珈乐/开心.wav  
+      text: "乐乐，乐乐，乐乐，乐乐宝，她说你唱这首歌好不好，你唱这首小雨。"
+      text_lang: zh
+      低落： 
+      ref_wav_path: /models/珈乐/低落.wav
+      text: "一个是珈乐，一个是紫萱，一个是珈乐。然后我那时候做测试，大家也知道。"
+      text_lang: zh
+tmp_dir: ./TEMP
